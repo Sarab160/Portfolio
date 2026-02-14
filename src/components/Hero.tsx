@@ -14,7 +14,7 @@ const Hero = () => {
             >
                 <h2 className="text-xl font-medium text-brand-primary-light">Hello, I'm</h2>
                 <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                    Developer Name
+                    Muhammad Sarab Rafique
                 </h1>
                 <p className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
                     A passionate <span className="text-white font-semibold">Machine Learning Engineer</span> and <span className="text-white font-semibold">Data Analyst</span>.
@@ -45,10 +45,10 @@ const Hero = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex-1 flex justify-center mt-10 md:mt-0 relative"
             >
-                <div className="relative w-64 h-64 md:w-80 md:h-80">
+                <div className="relative w-64 h-64 md:w-100 md:h-110">
                     <div className="absolute inset-0 rounded-full bg-brand-primary opacity-20 blur-3xl animate-pulse"></div>
                     <Image
-                        src="/globe.svg" /* Use your profile image path here */
+                        src="/images/sarab.jpg" /* Use your profile image path here */
                         alt="Profile Picture"
                         fill
                         className="rounded-full object-cover border-4 border-brand-primary/20 shadow-2xl relative z-10"

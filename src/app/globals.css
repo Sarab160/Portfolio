@@ -2,12 +2,12 @@
 
 @theme {
   --color-brand-black: #050505;
-  --color-brand-primary: #7c3aed;
-  /* Violet 600 */
-  --color-brand-primary-light: #a78bfa;
-  /* Violet 400 */
-  --color-brand-primary-hover: #5b21b6;
-  /* Violet 800 */
+  --color-brand-primary: #800000;
+  /* Maroon */
+  --color-brand-primary-light: #9b2c2c;
+  /* Lighter Maroon */
+  --color-brand-primary-hover: #4a0404;
+  /* Darker Maroon */
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
