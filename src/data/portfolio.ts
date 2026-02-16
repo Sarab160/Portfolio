@@ -1,4 +1,5 @@
-import { Code, Database, Brain, BarChart, Server, Globe } from "lucide-react";
+import { Code, Database, Brain, BarChart, Server, Globe,Workflow,FileCode,Code2 } from "lucide-react";
+import { fileURLToPath } from "node:url";
 
 export interface Project {
     title: string;
@@ -18,8 +19,10 @@ export const skillsData: Skill[] = [
         name: "Python",
         icon: Code,
         projects: [
-            { title: "AI Stock Predictor", description: "Using LSTM models to forecast stock market trends.", github: "https://github.com/example/stock-predictor" },
-            { title: "Data Scraper", description: "Automated web scraping tool for extracting real estate data.", github: "https://github.com/example/scraper" },
+            { title: "NTU-NavBot", description: "NavBot is a NTU Smart Navigation desktop application with an AI chatbot, live weather, live location , QR code support for mobile location scanning, and many other smart navigation features to help users easily explore the NTU campus.", github: "https://github.com/Sarab160/NTU-NavBot" },
+            { title: "NTU Smart Navigation System", description: "NTU Smart Navigation System is a desktop application with an  live weather, live location, QR code support for mobile location scanning, and many other smart navigation features to help users easily explore the NTU campus.", github: "https://github.com/Sarab160/NTU-Smart-Navigation" },
+            { title: "TimelyAI", description: "TimelyAI is a desktop application that uses AI to generate smart timetables with an interactive GUI, optimized scheduling, PDF export, and many other useful features to help users easily create and manage academic schedules.", github: "https://github.com/Sarab160/TimelyAI" },
+
         ],
     },
     {
@@ -42,15 +45,15 @@ export const skillsData: Skill[] = [
         name: "C++",
         icon: Server,
         projects: [
-            { title: "High-Performance server", description: "Multi-threaded server implementation in C++.", github: "https://github.com/example/cpp-server" },
-            { title: "Game Engine Core", description: "Basic 2D game engine physics system.", github: "https://github.com/example/game-engine" },
+            { title: "Snake game", description: "A simple, addictive console-based Snake game written in C++ using Windows libraries. Navigate the snake, eat fruit, and grow — but avoid hitting yourself!", github: "https://github.com/Sarab160/Snake-Game" },
+            { title: "Phone Book Management system", description: "A simple C++ console app to manage contacts with add, display, search, delete, and clear features, using linked lists and a text file for storage", github: "https://github.com/Sarab160/Phone-Book-Management-system" },
         ],
     },
     {
         name: "SQL",
         icon: Database,
         projects: [
-            { title: "Inventory Management System", description: "normalized database schema and stored procedures.", github: "https://github.com/example/inventory-sql" },
+            { title: "Railway Management System", description: "A Railway Management System in C# Windows Forms with a MySQL database, enabling easy CRUD operations for trains, passengers, reservations, and cancellations through an intuitive interface.", github: "https://github.com/Sarab160/Railway-System" },
         ],
     },
     {
@@ -59,6 +62,14 @@ export const skillsData: Skill[] = [
         projects: [
             { title: "Portfolio Website", description: "Personal portfolio built with Next.js and Tailwind.", github: "https://github.com/example/portfolio" },
             { title: "E-commerce Platform", description: "Full-stack e-commerce site with payment integration.", link: "https://example.com/shop" },
+        ],
+    },
+    {
+        name: "C#",
+        icon: Code2,
+        projects: [
+            { title: "Railway Management System", description: "A complete Railway Management System built using C# Windows Forms, designed to manage trains, passengers, travels, reservations, and cancellations through an intuitive user interface.", github: "https://github.com/Sarab160/Railway-System" },
+            
         ],
     },
 ];
