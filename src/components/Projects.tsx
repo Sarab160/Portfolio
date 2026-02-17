@@ -24,7 +24,7 @@ const Projects = () => {
 
     // Filter projects based on selected category
     const filteredProjects = selectedCategory === "All"
-        ? skillsData.flatMap(skill => skill.projects)
+        ? Array.from(new Map(skillsData.flatMap(skill => skill.projects).map(item => [item.title, item])).values())
         : skillsData.find(skill => skill.name === selectedCategory)?.projects || [];
 
     return (

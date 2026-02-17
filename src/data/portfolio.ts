@@ -29,7 +29,7 @@ export const skillsData: Skill[] = [
         name: "Machine Learning",
         icon: Brain,
         projects: [
-            { title: "Image Classifier", description: "CNN-based model for medical image diagnosis.", github: "https://github.com/example/image-classifier" },
+            { title: "FLEDGE", description: "is a quiz-based platform that uses Machine Learning to predict student performance. An ML model integrated with a Flask backend analyzes student data and delivers instant performance predictions.", github: "https://github.com/Sarab160/Fledge" },
             { title: "Sentiment Analysis", description: "NLP model to analyze customer feedback sentiment.", link: "https://example.com/sentiment" },
         ],
     },
@@ -60,8 +60,7 @@ export const skillsData: Skill[] = [
         name: "Web Development",
         icon: Globe,
         projects: [
-            { title: "Portfolio Website", description: "Personal portfolio built with Next.js and Tailwind.", github: "https://github.com/example/portfolio" },
-            { title: "E-commerce Platform", description: "Full-stack e-commerce site with payment integration.", link: "https://example.com/shop" },
+            { title: "FLEDGE", description: "is a smart quiz builder and learning platform where users create quizzes, share them via links or QR codes, and track instant results. It also includes an AI-based performance prediction system built with Machine Learning. Developed using Next.js, Supabase, and a Flask backend, FLEDGE enables secure authentication, real-time analytics, and intelligent student performance insights in one integrated platform.", github: "https://github.com/Sarab160/Fledge" },
         ],
     },
     {
@@ -69,6 +68,14 @@ export const skillsData: Skill[] = [
         icon: Code2,
         projects: [
             { title: "Railway Management System", description: "A complete Railway Management System built using C# Windows Forms, designed to manage trains, passengers, travels, reservations, and cancellations through an intuitive user interface.", github: "https://github.com/Sarab160/Railway-System" },
+            
+        ],
+    },
+    {
+        name: "n8n",
+        icon: Workflow,
+        projects: [
+            { title: "CampusCare", description: "is an automated complaint management system that collects student issues via Google Forms and processes them using n8n and OpenAI GPT-4.0 mini. It automatically classifies complaints, stores them in Google Sheets, and sends email notifications through Gmail, ensuring fast and fully automated issue tracking.", github: "https://github.com/Sarab160/CampusCare" },
             
         ],
     },
