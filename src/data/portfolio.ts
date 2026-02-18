@@ -1,4 +1,4 @@
-import { Code, Database, Brain, BarChart, Server, Globe,Workflow,FileCode,Code2 } from "lucide-react";
+import { Code, Database, Brain, BarChart, Server, Globe,Workflow,FileCode,Code2,FileType, TypeIcon,Store, LucideIcon } from "lucide-react";
 import { fileURLToPath } from "node:url";
 
 export interface Project {
@@ -6,6 +6,8 @@ export interface Project {
     description: string;
     link?: string;
     github?: string;
+    marketplace?:string;
+    icon?:LucideIcon
 }
 
 export interface Skill {
@@ -30,7 +32,20 @@ export const skillsData: Skill[] = [
         icon: Brain,
         projects: [
             { title: "FLEDGE", description: "is a quiz-based platform that uses Machine Learning to predict student performance. An ML model integrated with a Flask backend analyzes student data and delivers instant performance predictions.", github: "https://github.com/Sarab160/Fledge" },
-            { title: "Sentiment Analysis", description: "NLP model to analyze customer feedback sentiment.", link: "https://example.com/sentiment" },
+            { title: "Heart Disease Prediction App", description: "A Streamlit-based machine learning app that predicts heart disease risk from patient health data. It uses Logistic Regression to deliver quick and accurate predictions for early detection.", github: "https://github.com/Sarab160/Car-Price-Prediction" },
+            { title: "Car Price Prediction App", description: "A machine learning app that predicts the selling price of used cars using features like year, kilometers driven, fuel type, and transmission. It uses Polynomial Regression for accurate price estimation.", github: "https://github.com/Sarab160/Heart-disease-prediction-app" },
+            { title: "Delivery Time Prediction", description: "Predicts order delivery time using distance, rider speed, and weather. Built with **Linear Regression** for accurate estimates. ", github: "https://github.com/Sarab160/delivery_time/tree/master" },
+
+            { title: "Loan Approval Prediction App", description: "A Streamlit web app that predicts loan approval based on applicant details using **K-Nearest Neighbors (KNN)**. The app provides accuracy, precision, recall, F1 score, and a confusion matrix for model evaluation.", github: "https://github.com/Sarab160/Loan-Prediction-App" },
+            { title: "Customer Credit Card Segmentation", description: "A Streamlit app that segments credit card customers using **DBSCAN** for clustering and **Decision Tree** for classification. It provides cluster insights, model metrics, and real-time predictions.", github: "https://github.com/Sarab160/credit-card-segementation-app" },
+
+            { title: "Network Traffic Classification", description: "A Streamlit app that classifies network traffic using multiple machine learning models and provides real-time predictions and model accuracies.", github: "https://github.com/Sarab160/Classification-models-Project/tree/master" },
+            { title: "Crop Recommendation System", description: "A Streamlit app that recommends the best crop based on soil nutrients, weather, and district using **K-Nearest Neighbors (KNN)**. It shows model accuracy, metrics, and a confusion matrix for evaluation.", github: "https://github.com/Sarab160/Crop_prediction" },
+
+            { title: "Game Sales Prediction App", description: "A Streamlit app that predicts global game sales using game attributes, regional sales, and release year. It connects to **PostgreSQL** for real data, uses a **Voting Regressor ensemble** for accurate predictions, and provides model metrics and interactive visualizations.", github: "https://github.com/Sarab160/Games-Sales-Prediction" },
+            { title: "Price Index Predictor", description: "A Streamlit app that predicts product price spreads using a **Decision Tree Regressor**. Users can explore product data, tune model hyperparameters, visualize trends, and make interactive predictions.", github: "https://github.com/Sarab160/Price-index-predictor" },
+            { title: "Spam Email Detector", description: "A Streamlit app that detects whether an email is **Spam** or **Not Spam** using **Multinomial Naive Bayes** and TF-IDF text features.", github: "https://github.com/Sarab160/spam-email-detection/tree/master" },
+
         ],
     },
     {
@@ -76,6 +91,14 @@ export const skillsData: Skill[] = [
         icon: Workflow,
         projects: [
             { title: "CampusCare", description: "is an automated complaint management system that collects student issues via Google Forms and processes them using n8n and OpenAI GPT-4.0 mini. It automatically classifies complaints, stores them in Google Sheets, and sends email notifications through Gmail, ensuring fast and fully automated issue tracking.", github: "https://github.com/Sarab160/CampusCare" },
+            
+        ],
+    },
+    {
+        name: "TypeScript",
+        icon: TypeIcon,
+        projects: [
+            { title: "AutoPath – VS Code Extension", description: "AutoPath is a VS Code extension that automatically fixes file paths in your code when you rename or move files, preventing broken imports and errors. It keeps your project synced instantly with no setup required.", marketplace:"https://marketplace.visualstudio.com/items?itemName=sarabcheema.autopath" ,icon:Store},
             
         ],
     },

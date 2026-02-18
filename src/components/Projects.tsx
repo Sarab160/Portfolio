@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { Github } from "lucide-react";
+import { Github ,Store} from "lucide-react";
 import { skillsData } from "@/data/portfolio";
 
 const Projects = () => {
@@ -74,18 +74,33 @@ const Projects = () => {
                                 </p>
                             </div>
                             <div className="flex gap-4 mt-auto pt-4 border-t border-neutral-800">
-                                {project.github && (
-                                    <a
-                                        href={project.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
-                                    >
-                                        <Github size={16} />
-                                        Code
-                                    </a>
-                                )}
-                            </div>
+
+  {project.github && (
+    <a
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+    >
+      <Github size={16} />
+      Code
+    </a>
+  )}
+
+  {project.marketplace && (
+    <a
+      href={project.marketplace}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+    >
+      <Store size={16} />
+      Marketplace
+    </a>
+  )}
+
+</div>
+
                         </motion.div>
                     ))}
                 </div>
