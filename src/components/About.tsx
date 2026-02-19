@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { User, Code, Database, Brain } from "lucide-react";
+import { User, Code, Database, Brain, Award, FileText } from "lucide-react";
+import { certificatesData } from "@/data/portfolio";
 
 const About = () => {
     return (
@@ -45,6 +46,42 @@ const About = () => {
                                 <Code size={16} className="text-brand-primary-light" />
                                 <span>Full Stack Dev</span>
                             </div>
+                        </div>
+                    </div>
+                    <div className="w-full max-w-4xl mx-auto border-t border-neutral-800 pt-12 mt-8">
+                        <div className="flex items-center gap-2 mb-8 justify-center">
+                            <Award className="text-brand-primary-light" size={24} />
+                            <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                                Certificates
+                            </h3>
+                        </div>
+
+                        <div className="space-y-4">
+                            {certificatesData.map((cert, index) => (
+                                <motion.a
+                                    key={index}
+                                    href={cert.pdfLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-between p-4 bg-neutral-900 border border-neutral-800 rounded-lg hover:border-brand-primary hover:bg-neutral-800 transition-all group"
+                                    initial={{ opacity: 0, x: -20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: index * 0.1 }}
+                                >
+                                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+                                        <span className="font-bold text-white group-hover:text-brand-primary-light transition-colors">
+                                            {cert.title}
+                                        </span>
+                                        <span className="text-sm text-gray-500 hidden sm:block">•</span>
+                                        <span className="text-sm text-gray-400">{cert.issuer}</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-white transition-colors">
+                                        <span>{cert.date}</span>
+                                        <FileText size={16} />
+                                    </div>
+                                </motion.a>
+                            ))}
                         </div>
                     </div>
                 </div>

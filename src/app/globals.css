@@ -23,3 +23,25 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Custom Scrollbar - Using hex codes directly to ensure visibility */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+  /* Dark track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #800000;
+  /* Maroon thumb */
+  border-radius: 5px;
+  border: 2px solid #121212;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9b2c2c;
+  /* Lighter maroon on hover */
+}

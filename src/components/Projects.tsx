@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { Github ,Store} from "lucide-react";
-import { skillsData } from "@/data/portfolio";
+import { Github, Store, FileText, Code2 } from "lucide-react";
+import { skillsData, allProjects } from "@/data/portfolio";
 
 const Projects = () => {
     // Get unique categories from skillsData
@@ -35,9 +35,15 @@ const Projects = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
             >
-                <h2 className="text-3xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                    Featured Projects
-                </h2>
+                <div className="flex flex-col items-center justify-center mb-12">
+                    <h2 className="text-3xl md:text-5xl font-bold text-center bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent mb-4">
+                        Projects Showcase
+                    </h2>
+                    <div className="flex items-center gap-2 px-3 py-1 bg-neutral-900 border border-neutral-800 rounded-full">
+                        <Code2 size={14} className="text-brand-primary" />
+                        <span className="text-gray-400 text-xs font-medium">Total Projects: <span className="text-white">{allProjects.length}</span></span>
+                    </div>
+                </div>
 
                 {/* Category Selection Bar */}
                 <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -59,6 +65,7 @@ const Projects = () => {
                     {filteredProjects.map((project, index) => (
                         <motion.div
                             key={project.title}
+                            id={`project-${project.title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w\-]+/g, '')}`}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
@@ -74,32 +81,42 @@ const Projects = () => {
                                 </p>
                             </div>
                             <div className="flex gap-4 mt-auto pt-4 border-t border-neutral-800">
+                                {project.dashboardPdf ? (
+                                    <a
+                                        href={project.dashboardPdf}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+                                    >
+                                        <FileText size={16} />
+                                        View as PDF
+                                    </a>
+                                ) : (
+                                    project.github && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+                                        >
+                                            <Github size={16} />
+                                            Code
+                                        </a>
+                                    )
+                                )}
 
-  {project.github && (
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
-    >
-      <Github size={16} />
-      Code
-    </a>
-  )}
-
-  {project.marketplace && (
-    <a
-      href={project.marketplace}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
-    >
-      <Store size={16} />
-      Marketplace
-    </a>
-  )}
-
-</div>
+                                {project.marketplace && (
+                                    <a
+                                        href={project.marketplace}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+                                    >
+                                        <Store size={16} />
+                                        Marketplace
+                                    </a>
+                                )}
+                            </div>
 
                         </motion.div>
                     ))}

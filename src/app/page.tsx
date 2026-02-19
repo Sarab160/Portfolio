@@ -1,14 +1,16 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
+import FeaturedProjects from "@/components/FeaturedProjects";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-brand-black text-white">
       <Hero />
+      <FeaturedProjects />
       <About />
       <Skills />
     </main>
   );
 }
- 
+
