@@ -46,14 +46,19 @@ export const skillsData: Skill[] = [
             { title: "Price Index Predictor", description: "A Streamlit app that predicts product price spreads using a **Decision Tree Regressor**. Users can explore product data, tune model hyperparameters, visualize trends, and make interactive predictions.", github: "https://github.com/Sarab160/Price-index-predictor" },
             { title: "Spam Email Detector", description: "A Streamlit app that detects whether an email is **Spam** or **Not Spam** using **Multinomial Naive Bayes** and TF-IDF text features.", github: "https://github.com/Sarab160/spam-email-detection/tree/master" },
 
+            { title: "Stroke Prediction App", description: "A Streamlit-based machine learning app that predicts stroke risk using a KNN model. It enables real-time prediction with data preprocessing and model evaluation.", github: "https://github.com/Sarab160/Stroke_prediction/tree/master" },
+            { title: "Medical Insurance Cost Prediction", description: "A machine learning app that predicts medical insurance costs using Polynomial Regression and an interactive interface built with Streamlit. It uses real-world healthcare data from Kaggle to provide instant cost predictions.", github: "https://github.com/Sarab160/Medical-Insurance-Cost-Prediction" },
+            { title: "Credit Card Delinquency Prediction App", description: "A machine learning app that predicts credit card delinquency using a KNN model and automated data preprocessing. It features an interactive dashboard built with Streamlit for real-time customer risk prediction.", github: "https://github.com/Sarab160/Credit-card/tree/master" },
+
+            
         ],
     },
     {
         name: "Data Analysis",
         icon: BarChart,
         projects: [
-            { title: "Sales Dashboard", description: "Interactive PowerBI dashboard for regional sales performance.", link: "https://example.com/dashboard" },
-            { title: "EDA on Titanic Dataset", description: "Comprehensive exploratory data analysis and visualization.", github: "https://github.com/example/titanic-eda" },
+            { title: "Netflix Data Analysis", description: "Analyze Netflix's catalog using Pandas and Matplotlib.", github: "https://github.com/Sarab160/netflix_analysis" },
+            { title: "IPL Data", description: "A data analysis and visualization project on IPL match data using Pandas, Matplotlib, and Seaborn.", github: "http://github.com/Sarab160/ipl_matches_analysis" },
         ],
     },
     {
