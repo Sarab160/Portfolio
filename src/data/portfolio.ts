@@ -64,6 +64,8 @@ export const skillsData: Skill[] = [
             { title: "Stroke Prediction App", description: "A Streamlit-based machine learning app that predicts stroke risk using a KNN model. It enables real-time prediction with data preprocessing and model evaluation.", github: "https://github.com/Sarab160/Stroke_prediction/tree/master" },
             { title: "Medical Insurance Cost Prediction", description: "A machine learning app that predicts medical insurance costs using Polynomial Regression and an interactive interface built with Streamlit. It uses real-world healthcare data from Kaggle to provide instant cost predictions.", github: "https://github.com/Sarab160/Medical-Insurance-Cost-Prediction" },
             { title: "Credit Card Delinquency Prediction App", description: "A machine learning app that predicts credit card delinquency using a KNN model and automated data preprocessing. It features an interactive dashboard built with Streamlit for real-time customer risk prediction.", github: "https://github.com/Sarab160/Credit-card/tree/master" },
+            { title: "Crime Clustering", description: "This project identifies and visualizes crime hotspots using the DBSCAN algorithm on geospatial data. Built with Python, it combines clustering, interactive maps, and visual analytics through Streamlit to make crime patterns easy to explore and understand.", github: "https://github.com/Sarab160/CrimeScope" },
+            { title: "Fertilizer Prediction App", description: "A Streamlit web app that predicts the best fertilizer for a crop using soil and environmental inputs, powered by a Logistic Regression model with performance metrics and interactive visualizations.", github: "https://github.com/Sarab160/Fetilizer-prediction-App" },
 
 
         ],
@@ -72,10 +74,17 @@ export const skillsData: Skill[] = [
         name: "Data Analysis",
         icon: BarChart,
         projects: [
-            { title: "Netflix Data Analysis", description: "Analyze Netflix's catalog using Pandas and Matplotlib.", github: "https://github.com/Sarab160/netflix_analysis", dashboardPdf: "/dashboards/netflix_dashboard.pdf" },
-            { title: "IPL Data", description: "A data analysis and visualization project on IPL match data using Pandas, Matplotlib, and Seaborn.", github: "http://github.com/Sarab160/ipl_matches_analysis", dashboardPdf: "/dashboards/ipl_dashboard.pdf" },
+            { title: "Credit Card Dashboard", description: "A Power BI dashboard showing key credit card insights with interactive visuals and DAX measures.",  dashboardPdf: "/dashboards/credit card.pdf" },
+            { title: "IPL Matches (2008 -2017) Dashboard", description: "A Power BI dashboard showing key credit card insights with interactive visuals.",  dashboardPdf: "/dashboards/ipl matches.pdf" },
+            { title: "Stroke  Dashboard", description: "A Power BI dashboard showing key credit card insights with interactive visuals.",  dashboardPdf: "/dashboards/stroke.pdf" },
+
+            { title: "Netflix Data Analysis", description: "Analyze Netflix's catalog using Pandas and Matplotlib.", github: "https://github.com/Sarab160/netflix_analysis" },
+            { title: "IPL Data", description: "A data analysis and visualization project on IPL match data using Pandas, Matplotlib, and Seaborn.", github: "http://github.com/Sarab160/ipl_matches_analysis" },
+            { title: "Marketing Data", description: "A data analysis and visualization project on Marketing data using Pandas, Matplotlib, and Seaborn.", github: "https://github.com/Sarab160/Marketing" },
+
         ],
     },
+
     {
         name: "C++",
         icon: Server,
@@ -96,6 +105,8 @@ export const skillsData: Skill[] = [
         icon: Globe,
         projects: [
             { title: "FLEDGE", description: "is a smart quiz builder and learning platform where users create quizzes, share them via links or QR codes, and track instant results. It also includes an AI-based performance prediction system built with Machine Learning. Developed using Next.js, Supabase, and a Flask backend, FLEDGE enables secure authentication, real-time analytics, and intelligent student performance insights in one integrated platform.", github: "https://github.com/Sarab160/Fledge", featured: true },
+            { title: "FITHIT – Spin & Win Discount Wheel", description: "A simple interactive web app where users spin a digital wheel to win discounts, built with HTML, CSS, and JavaScript using Chart.js, featuring a responsive design and fun celebration effects.", github: "https://github.com/Sarab160/spin-wheel", featured: true },
+
         ],
     },
     {
