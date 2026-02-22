@@ -17,9 +17,8 @@ const Hero = () => {
                     Muhammad Sarab Rafique
                 </h1>
                 <p className="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed">
-                    A passionate <span className="text-white font-semibold">Machine Learning Engineer</span> and <span className="text-white font-semibold">Data Analyst</span>.
-                    I specialize in building data-driven applications that solve real-world problems.
-                    Translating complex data into actionable insights and robust software solutions.
+                    A passionate <span className="text-white font-semibold">Data Scientist</span> with strong expertise in <span className="text-white font-semibold">Machine Learning</span> and <span className="text-white font-semibold">Data Analysis</span>.
+                    I specialize in building data-driven solutions, transforming complex datasets into actionable insights, and developing practical models that solve real-world problems.
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
                     <a

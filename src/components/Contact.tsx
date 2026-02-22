@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
     return (
@@ -29,7 +29,7 @@ const Contact = () => {
                             <div>
                                 <h3 className="text-lg font-semibold text-white">Email</h3>
                                 <a href="mailto:contact@example.com" className="text-gray-400 hover:text-brand-primary-light transition-colors">
-                                    contact@example.com
+                                    sarabcheema160@gmail.com
                                 </a>
                             </div>
                         </div>
@@ -37,15 +37,13 @@ const Contact = () => {
                         <div className="space-y-4">
                             <h3 className="text-lg font-semibold text-white">Socials</h3>
                             <div className="flex gap-4">
-                                <a href="#" className="p-3 bg-neutral-900 rounded-lg border border-neutral-800 text-gray-400 hover:text-white hover:border-brand-primary transition-all">
+                                <a href="https://github.com/Sarab160" className="p-3 bg-neutral-900 rounded-lg border border-neutral-800 text-gray-400 hover:text-white hover:border-brand-primary transition-all">
                                     <Github size={20} />
                                 </a>
-                                <a href="#" className="p-3 bg-neutral-900 rounded-lg border border-neutral-800 text-gray-400 hover:text-blue-400 hover:border-blue-400 transition-all">
+                                <a href="www.linkedin.com/in/sarab-cheema-20841928a" className="p-3 bg-neutral-900 rounded-lg border border-neutral-800 text-gray-400 hover:text-blue-400 hover:border-blue-400 transition-all">
                                     <Linkedin size={20} />
                                 </a>
-                                <a href="#" className="p-3 bg-neutral-900 rounded-lg border border-neutral-800 text-gray-400 hover:text-blue-300 hover:border-blue-300 transition-all">
-                                    <Twitter size={20} />
-                                </a>
+                                
                             </div>
                         </div>
                     </div>

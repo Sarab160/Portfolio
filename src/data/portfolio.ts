@@ -57,7 +57,7 @@ export const skillsData: Skill[] = [
             { title: "Network Traffic Classification", description: "A Streamlit app that classifies network traffic using multiple machine learning models and provides real-time predictions and model accuracies.", github: "https://github.com/Sarab160/Classification-models-Project/tree/master" },
             { title: "Crop Recommendation System", description: "A Streamlit app that recommends the best crop based on soil nutrients, weather, and district using **K-Nearest Neighbors (KNN)**. It shows model accuracy, metrics, and a confusion matrix for evaluation.", github: "https://github.com/Sarab160/Crop_prediction" },
 
-            { title: "Game Sales Prediction App", description: "A Streamlit app that predicts global game sales using game attributes, regional sales, and release year. It connects to **PostgreSQL** for real data, uses a **Voting Regressor ensemble** for accurate predictions, and provides model metrics and interactive visualizations.", github: "https://github.com/Sarab160/Games-Sales-Prediction", featured: true },
+            { title: "Game Sales Prediction App", description: "A Streamlit app that predicts global game sales using game attributes, regional sales, and release year. It connects to **PostgreSQL** for real data, uses a **Voting Regressor ensemble** for accurate predictions, and provides model metrics and interactive visualizations.", github: "https://github.com/Sarab160/Games-Sales-Prediction" },
             { title: "Price Index Predictor", description: "A Streamlit app that predicts product price spreads using a **Decision Tree Regressor**. Users can explore product data, tune model hyperparameters, visualize trends, and make interactive predictions.", github: "https://github.com/Sarab160/Price-index-predictor" },
             { title: "Spam Email Detector", description: "A Streamlit app that detects whether an email is **Spam** or **Not Spam** using **Multinomial Naive Bayes** and TF-IDF text features.", github: "https://github.com/Sarab160/spam-email-detection/tree/master" },
 
@@ -74,7 +74,7 @@ export const skillsData: Skill[] = [
         name: "Data Analysis",
         icon: BarChart,
         projects: [
-            { title: "Credit Card Dashboard", description: "A Power BI dashboard showing key credit card insights with interactive visuals and DAX measures.",  dashboardPdf: "/dashboards/credit card.pdf" },
+            { title: "Credit Card Dashboard", description: "A Power BI dashboard showing key credit card insights with interactive visuals and DAX measures.",  dashboardPdf: "/dashboards/credit card.pdf",featured:true },
             { title: "IPL Matches (2008 -2017) Dashboard", description: "A Power BI dashboard showing key credit card insights with interactive visuals.",  dashboardPdf: "/dashboards/ipl matches.pdf" },
             { title: "Stroke  Dashboard", description: "A Power BI dashboard showing key credit card insights with interactive visuals.",  dashboardPdf: "/dashboards/stroke.pdf" },
 
@@ -104,8 +104,8 @@ export const skillsData: Skill[] = [
         name: "Web Development",
         icon: Globe,
         projects: [
-            { title: "FLEDGE", description: "is a smart quiz builder and learning platform where users create quizzes, share them via links or QR codes, and track instant results. It also includes an AI-based performance prediction system built with Machine Learning. Developed using Next.js, Supabase, and a Flask backend, FLEDGE enables secure authentication, real-time analytics, and intelligent student performance insights in one integrated platform.", github: "https://github.com/Sarab160/Fledge", featured: true },
-            { title: "FITHIT – Spin & Win Discount Wheel", description: "A simple interactive web app where users spin a digital wheel to win discounts, built with HTML, CSS, and JavaScript using Chart.js, featuring a responsive design and fun celebration effects.", github: "https://github.com/Sarab160/spin-wheel", featured: true },
+            { title: "FLEDGE", description: "is a smart quiz builder and learning platform where users create quizzes, share them via links or QR codes, and track instant results. It also includes an AI-based performance prediction system built with Machine Learning. Developed using Next.js, Supabase, and a Flask backend, FLEDGE enables secure authentication, real-time analytics, and intelligent student performance insights in one integrated platform.", github: "https://github.com/Sarab160/Fledge" },
+            { title: "FITHIT – Spin & Win Discount Wheel", description: "A simple interactive web app where users spin a digital wheel to win discounts, built with HTML, CSS, and JavaScript using Chart.js, featuring a responsive design and fun celebration effects.", github: "https://github.com/Sarab160/spin-wheel" },
 
         ],
     },
@@ -121,7 +121,7 @@ export const skillsData: Skill[] = [
         name: "n8n",
         icon: Workflow,
         projects: [
-            { title: "CampusCare", description: "is an automated complaint management system that collects student issues via Google Forms and processes them using n8n and OpenAI GPT-4.0 mini. It automatically classifies complaints, stores them in Google Sheets, and sends email notifications through Gmail, ensuring fast and fully automated issue tracking.", github: "https://github.com/Sarab160/CampusCare" },
+            { title: "CampusCare", description: "is an automated complaint management system that collects student issues via Google Forms and processes them using n8n and OpenAI GPT-4.0 mini. It automatically classifies complaints, stores them in Google Sheets, and sends email notifications through Gmail, ensuring fast and fully automated issue tracking.", github: "https://github.com/Sarab160/CampusCare",featured:true },
 
         ],
     },
@@ -129,7 +129,7 @@ export const skillsData: Skill[] = [
         name: "TypeScript",
         icon: TypeIcon,
         projects: [
-            { title: "AutoPath – VS Code Extension", description: "AutoPath is a VS Code extension that automatically fixes file paths in your code when you rename or move files, preventing broken imports and errors. It keeps your project synced instantly with no setup required.", marketplace: "https://marketplace.visualstudio.com/items?itemName=sarabcheema.autopath", icon: Store },
+            { title: "AutoPath – VS Code Extension", description: "AutoPath is a VS Code extension that automatically fixes file paths in your code when you rename or move files, preventing broken imports and errors. It keeps your project synced instantly with no setup required.", marketplace: "https://marketplace.visualstudio.com/items?itemName=sarabcheema.autopath", icon: Store ,featured:true},
 
         ],
     },

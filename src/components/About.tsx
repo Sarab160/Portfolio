@@ -24,30 +24,34 @@ const About = () => {
                     </div>
 
                     <div className="max-w-4xl mx-auto text-center space-y-6">
-                        <p className="text-gray-300 text-lg leading-relaxed">
-                            I am a passionate <span className="text-brand-primary-light font-bold">Machine Learning Engineer</span> and <span className="text-brand-primary-light font-bold">Data Analyst</span> dedicated to building intelligent systems that solve real-world problems.
-                            With a strong foundation in Python, deep learning, and data visualization, I transform complex datasets into actionable insights.
-                        </p>
+    <p className="text-gray-300 text-lg leading-relaxed">
+        I am a passionate <span className="text-brand-primary-light font-bold">Data Scientist</span> with strong expertise in 
+        <span className="text-brand-primary-light font-bold"> Machine Learning</span> and 
+        <span className="text-brand-primary-light font-bold"> Data Analysis</span>, dedicated to building data-driven solutions that solve real-world problems. 
+        I create various machine learning models for prediction, which you can explore in my projects section. 
+        I enjoy transforming complex datasets into meaningful insights and practical applications.
+    </p>
 
-                        <p className="text-gray-400 leading-relaxed">
-                            My journey involves working on diverse projects ranging from predictive modeling and natural language processing to full-stack web applications. I thrive in environments that challenge me to learn new technologies and innovate.
-                        </p>
+    <p className="text-gray-400 leading-relaxed">
+        My journey includes working on diverse projects focused on predictive modeling, data analysis, and intelligent systems. 
+        I continuously strive to improve my skills, experiment with new techniques, and build impactful solutions that turn data into value.
+    </p>
 
-                        <div className="flex flex-wrap gap-4 pt-4 justify-center">
-                            <div className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-full flex items-center gap-2 text-sm text-gray-300">
-                                <Brain size={16} className="text-brand-primary-light" />
-                                <span>Machine Learning</span>
-                            </div>
-                            <div className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-full flex items-center gap-2 text-sm text-gray-300">
-                                <Database size={16} className="text-brand-primary-light" />
-                                <span>Data Analysis</span>
-                            </div>
-                            <div className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-full flex items-center gap-2 text-sm text-gray-300">
-                                <Code size={16} className="text-brand-primary-light" />
-                                <span>Full Stack Dev</span>
-                            </div>
-                        </div>
-                    </div>
+    <div className="flex flex-wrap gap-4 pt-4 justify-center">
+        <div className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-full flex items-center gap-2 text-sm text-gray-300">
+            <Brain size={16} className="text-brand-primary-light" />
+            <span>Machine Learning</span>
+        </div>
+        <div className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-full flex items-center gap-2 text-sm text-gray-300">
+            <Database size={16} className="text-brand-primary-light" />
+            <span>Data Analysis</span>
+        </div>
+        <div className="bg-neutral-900 border border-neutral-800 px-4 py-2 rounded-full flex items-center gap-2 text-sm text-gray-300">
+            <Code size={16} className="text-brand-primary-light" />
+            <span>Data Science</span>
+        </div>
+    </div>
+</div>
                     <div className="w-full max-w-4xl mx-auto border-t border-neutral-800 pt-12 mt-8">
                         <div className="flex items-center gap-2 mb-8 justify-center">
                             <Award className="text-brand-primary-light" size={24} />
