@@ -26,8 +26,8 @@ export interface Certificate {
 }
 
 export const certificatesData: Certificate[] = [
-    { title: "Machine Learning Internship", issuer: "CodSoft", date: "2024", pdfLink: "/certificates/ml_internship.pdf" },
-    { title: "Data Analysis Certification", issuer: "Coursera", date: "2023", pdfLink: "/certificates/data_analysis.pdf" },
+    { title: "Data Visualization Associate Early Remote Internship", issuer: "Excelerate", date: "2025", pdfLink: "/certificates/internship.pdf" },
+    { title: "Letter Of Recommmendation", issuer: "Excelerate", date: "2025", pdfLink: "/certificates/lor.pdf" },
     // Add more certificates here
 ];
 
