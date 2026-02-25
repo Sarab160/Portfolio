@@ -17,10 +17,10 @@ const Projects = () => {
 
     // Update state if URL param changes
     useEffect(() => {
-        if (categoryParam) {
+        if (categoryParam && categoryParam !== selectedCategory) {
             setSelectedCategory(categoryParam);
         }
-    }, [categoryParam]);
+    }, [categoryParam, selectedCategory]);
 
     // Filter projects based on selected category
     const filteredProjects = selectedCategory === "All"
@@ -28,7 +28,7 @@ const Projects = () => {
         : skillsData.find(skill => skill.name === selectedCategory)?.projects || [];
 
     return (
-        <section className="py-20 px-6 max-w-6xl mx-auto min-h-screen" id="projects">
+        <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto min-h-screen" id="projects">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -46,12 +46,12 @@ const Projects = () => {
                 </div>
 
                 {/* Category Selection Bar */}
-                <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8 md:mb-12">
                     {categories.map((category) => (
                         <button
                             key={category}
                             onClick={() => setSelectedCategory(category)}
-                            className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${selectedCategory === category
+                            className={`px-4 py-1.5 md:px-6 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${selectedCategory === category
                                 ? "bg-brand-primary text-white shadow-[0_0_15px_rgba(74,4,4,0.5)]"
                                 : "bg-neutral-900 text-gray-400 hover:text-white hover:bg-neutral-800 border border-neutral-800"
                                 }`}

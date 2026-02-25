@@ -6,7 +6,7 @@ import { FolderGit2 } from "lucide-react";
 
 const ProjectStats = () => {
     return (
-        <section className="py-8 px-6 bg-neutral-900/30 border-y border-neutral-800/50">
+        <section className="py-6 md:py-8 px-4 sm:px-6 bg-neutral-900/30 border-y border-neutral-800/50">
             <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}

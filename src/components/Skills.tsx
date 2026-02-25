@@ -12,7 +12,7 @@ const Skills = () => {
     };
 
     return (
-        <section className="py-20 px-6 max-w-6xl mx-auto">
+        <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +23,7 @@ const Skills = () => {
                     Technical Skills
                 </h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                     {skillsData.map((skill, index) => (
                         <motion.button
                             key={skill.name}
@@ -32,10 +32,10 @@ const Skills = () => {
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
                             onClick={() => handleSkillClick(skill.name)}
-                            className="flex flex-col items-center justify-center p-6 bg-neutral-900 border border-neutral-800 rounded-xl hover:border-brand-primary hover:shadow-[0_0_15px_rgba(74,4,4,0.4)] transition-all group"
+                            className="flex flex-col items-center justify-center p-4 sm:p-6 bg-neutral-900 border border-neutral-800 rounded-xl hover:border-brand-primary hover:shadow-[0_0_15px_rgba(74,4,4,0.4)] transition-all group"
                         >
-                            <skill.icon size={40} className="mb-4 text-gray-400 group-hover:text-brand-primary-light transition-colors" />
-                            <span className="text-lg font-medium text-gray-300 group-hover:text-white transition-colors">{skill.name}</span>
+                            <skill.icon size={40} className="mb-3 sm:mb-4 text-gray-400 group-hover:text-brand-primary-light transition-colors w-8 h-8 sm:w-10 sm:h-10" />
+                            <span className="text-base sm:text-lg font-medium text-gray-300 group-hover:text-white transition-colors">{skill.name}</span>
                         </motion.button>
                     ))}
                 </div>

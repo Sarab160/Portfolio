@@ -8,26 +8,26 @@ const FeaturedProjects = () => {
     const featuredProjects = allProjects.filter(p => p.featured);
 
     return (
-        <section className="py-16 px-6 max-w-6xl mx-auto">
+        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
             >
-                <div className="flex justify-center mb-12">
+                <div className="flex justify-center mb-8 md:mb-12">
                     <a href="#projects" className="group cursor-pointer">
-                        <h2 className="text-3xl md:text-5xl font-bold text-center bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent group-hover:text-brand-primary transition-all duration-300">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent group-hover:text-brand-primary transition-all duration-300">
                             Featured Works
                         </h2>
                     </a>
                 </div>
 
-                <div className="flex overflow-x-auto gap-5 pb-8 scrollbar-hide snap-x px-1">
+                <div className="flex overflow-x-auto gap-4 md:gap-5 pb-8 scrollbar-hide snap-x px-1">
                     {featuredProjects.map((project, index) => (
                         <motion.div
                             key={index}
                             whileHover={{ y: -5 }}
-                            className="min-w-[320px] md:min-w-[400px] bg-neutral-900/30 backdrop-blur-sm border border-neutral-800/60 p-5 rounded-2xl hover:border-brand-primary/30 hover:bg-neutral-900/60 transition-all duration-300 snap-center group"
+                            className="w-[85vw] sm:w-auto min-w-[280px] sm:min-w-[320px] md:min-w-[400px] bg-neutral-900/30 backdrop-blur-sm border border-neutral-800/60 p-4 md:p-5 rounded-2xl hover:border-brand-primary/30 hover:bg-neutral-900/60 transition-all duration-300 snap-center group"
                         >
                             <div className="flex items-start justify-between gap-4 mb-3">
                                 <div>
